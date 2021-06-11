@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--start of left fieldset MINA-->
+    <fieldset id="leftside">
+        <legend>Share your Experience at Red Ball Pizza</legend>
+        <table>
+            <tr>
+                <td><label for="date_of_visit">Date of Visit</label> </td>
+
+
+                <td> <input type="date" id="date_of_visit"></td>
+
+            </tr>
+            <tr>
+
+                <td> <label for="order_type">Order type</label></td>
+                <td>
+                    <select id="order_type">
+                    <optgroup label="Dine In">
+                       
+                        <option value="dine_in">Dine In</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="teke_out">Take Out</option>
+                    </optgroup>
+
+                </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="service_friendly">Was Your Servive Friendly&quest;</label>
+
+                </td>
+
+                <td>
+                    <form action="yes" method="POST">
+                        <label for="service_friendly">YES</label>
+                        <input id="service_friendly" type="radio" name="yes" value="yes" checked>
+                        <label for="service_friendly">NO</label>
+                        <input type="radio" name="yes" value="no">
+                    </form>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for="order_correct">Was Your Servive Correct&quest;</label>
+
+                </td>
+                <td>
+                    <form action="yes" method="POST">
+                        <label for="order_correct">YES</label>
+                        <input type="radio" id="order_correct" name="yes" value="yes" checked>
+                        <label for="order_correct">NO</label>
+                        <input type="radio" name="yes" value="no">
+                    </form>
+                </td>
+
+
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="food_hot">Was Your food Friendly&quest;</label>
+
+                </td>
+                <td>
+                    <form action="yes" method="POST">
+                        <label for="food_hot">YES</label>
+                        <input type="radio" id="food_hot" name="yes" value="yes" checked>
+                        <label for="food_hot">NO</label>
+                        <input type="radio" name="yes" value="no">
+                    </form>
+                </td>
+
+
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="fader">Rate the overall service <br>(0=poor; 10=great) </label>
+                </td>
+
+                <td>
+
+                    <label for="fader">0</label>
+                    <input type="range" name="rate_service" id="fader" min="0" max="10" step="1" value="5">
+                    <output class="output-rate" for="output-rate">10</output>
+                </td>
+
+
+                <tr>
+                    <td>
+                        <label for="experience">Tell us more about your experience!</label>
+                    </td>
+                    <td>
+                        <textarea id="experience" cols="20" rows="2"></textarea>
+                    </td>
+
+                </tr>
+
+
+
+
+
+        </table>
+    </fieldset>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" id="submit_my_survey" value="Submit My Survey" /></td>
+            <td> <input type="reset" id="clear_form" value="Cancel" />
+            </td>
+        </tr>
+    </table>
+    <!--end of left fieldset MINA-->
+</body>
+
+</html>

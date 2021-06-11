@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+@import url("reset-default.css");
+
+
+
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+	border-left: #333 solid 2px;
+    border-right: #333 solid 2px;
+	box-shadow: 0px 0px 20px 5px rgb(73, 72, 72) inset;
+	background-color: #fff;
+	font-size: small;
+	
+    
+}
+
+
+
+header {
+	margin: 0; 
+	height: auto;
+  }
+  
+img {
+	width:100%;  
+  }  
+ 
+/* start styling nav */
+
+#nav{
+	width: 100%;
+    background-image:  url('../images/rb_navicon.png'),linear-gradient(black, rgb(151, 7, 7));
+    background-repeat: no-repeat;
+	text-align: center;
+	margin-top: -3px;
+	height: 30px;
+	margin-bottom: 1em;
+	
+   
+	
+}
+/* hiding menu*/
+#nav_links, footer{
+    display: none;
+}
+/*
+#nav_links{
+	margin-top: 0;
+	list-style-type: none;
+}
+
+#nav_links li{
+	margin-top: 0;
+	display: inline-block;
+}
+
+#nav_links li a{
+	display: inline-block;
+	color: white;
+	margin: 1em;
+}
+
+#nav_links li:hover{
+	background-color:rgba(151, 7, 7 );
+	border-radius: 10px;
+	box-shadow: 2px 0px 5px black inset;
+	transition: .5s;
+	transform: translatey(8px);
+	
+}
+
+#nav_links li a:hover{
+		text-decoration: none;
+}
+
+#nav_links li a:active{
+	font-weight: 800;
+	color: black;
+	font-size: large;
+
+}
+
+#nav_links li a:visited{
+	color: rgb(211, 208, 15);
+}
+
+#nav_links li a:link{
+	color: white;
+}
+
+*/
+
+
+
+/* Styling Main */
+
+
+
+#main_top_section  h1{
+	font-weight:900;
+	font-size:large;
+    color:  rgb(151, 7, 7);
+    padding-left: 15px;
+
+}
+
+Section > h1 + p{
+	margin: 0 auto 0 auto;
+    padding: .7em .5em 1em .5em;
+    font-size: small;
+    line-height: 1.3;	
+}
+
+
+.form{
+    background-color: #f1e8b5;
+    border-radius: 5%;
+}
+
+legend {
+    background-color: #b31419;
+    color: white;
+	padding: 4px 6px;
+}
+
+#fieldset_left{
+	padding: .5em;  
+}
+
+td, tr{
+	border:transparent solid 3px;
+	vertical-align: middle;
+}
+
+table{
+	border-collapse:separate;
+}
+
+#fieldset_right{
+    margin-top: .8em;
+}
+
+
+
+#grid_dine_out {
+	max-width: 348px;
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: auto auto;
+	padding-top: 5px;
+	margin: 0 1% 0 1%;
+  }
+
+
+
+.vertical_align{
+    vertical-align: top;
+}
+
+.r_radio{
+    border: solid thin rgb(124, 117, 117);
+	padding:.3em;
+	
+}
+
+#mailing_list{
+	padding: .3em;
+}
+
+.button {
+    background-color: #e2e2e2;
+    border: 1px solid rgb(77, 77, 77);
+    color:black;
+    padding: .3em;
+    font-size: small;
+    margin: .7em;
+    cursor: pointer;
+   }
+  
+   #experience {
+	   width: 100%;
+   }
+   
+  
+   #fader{
+	width:75%;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+   }
+
+   #label_textarea > label{
+	   line-height: 1.5em;
+   }
+
+ 
+   #td_text_area br{
+	   display: none;
+   }
+
+   .slider {
+	-webkit-appearance: none;
+	  width: 82%;
+	  height: 13px;
+	  background: #d3d3d3;
+	  outline: none;
+	  opacity: 0.7;
+	  -webkit-transition: .2s;
+	  transition: opacity .2s;
+	}
+	
+	.slider::-webkit-slider-thumb {
+	  -webkit-appearance: none;
+	  appearance: none;
+	  width: 13px;
+	  height: 13px;
+	  background: #000000;
+	  cursor: pointer;
+	}
+	
+	.slider::-moz-range-thumb {
+	  width: 13px;
+	  height: 13px;
+	  background: #000000;
+	  cursor: pointer;
+	}
+  
+
+   .button:hover {
+    background-color:#b31419;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    transform: translatey(3px);
+  }
+  
+  
+   #buttons_container {
+    text-align: center;
+   }
+  
+ 
+/* Styling footer */
+
+#footer{
+	width: 100%;
+	margin: 1em auto 0 auto;
+	background-image: linear-gradient( rgb(151, 7, 7 ), black);
+	display: grid;
+	grid-template-columns: 1fr;
+	
+}
+
+.footer_section{
+    padding: .6em;
+    margin-left: 1em;
+}
+
+.footer_section h2{
+	color:rgb(189, 189, 64);
+	font-weight: bold;
+	font-size: medium;
+	text-transform: uppercase;
+	padding: .5em 0;
+	
+}
+
+.footer_links > li  a, #footer_address{
+	color:white;
+	text-decoration: none;
+	
+}
+
+
+
+#footer ul li a:hover{
+	background-color:rgba(151, 7, 7 );
+	
+	padding: .2em .5em;
+	border-radius: 5px;
+	}
+	#footer ul li:hover{
+		
+		transition: .5s;
+		transform: translatex(5px);
+}
+	

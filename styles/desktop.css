@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url("reset-default.css"); 
+@import url("main.css"); 
+
+body {
+  width: 100%;  
+}
+
+#wrapper {
+  max-width: 1000px;
+	width: 100%;
+	margin: auto;
+}
+
+header {
+  margin: 0; 
+  height: auto;
+}
+
+img {
+  width:100%;  
+}  
+
+
+#nav  {
+  margin-top: -3px;
+}
+
+#nav_links li a:visited {
+	color: yellow;
+}
+
+.label_left {
+  margin: auto; 
+  height: auto;
+  display: inline-block;
+  position: absolute;
+}
+
+
+#grid_dine_out {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  padding-top: 5px;
+}
+  
+
+#label_hear_about {
+  float: right;
+  padding-right: 5px;
+}
+
+
+.vertical_align {
+  position: relative;
+  vertical-align: top;
+}
+
+#fader{
+	width:80%;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+}
+
+#absolute{
+  height: auto;
+}
+
+#fieldset_right td {
+  vertical-align: middle;
+}
+
+.footer_links {
+  font-size: 13px;
+}
+
+#footer_address {
+  font-size: 15px;
+}

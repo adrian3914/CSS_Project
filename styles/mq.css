@@ -1,0 +1,15 @@
+/* main css */
+
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, desktop.
+*/
+
+@import url("desktop.css") only screen and (min-width:769px);   
+
+ 
+@import url("tablet.css") only screen and (min-width:481px) and (max-width:768px);   
+
+  
+@import url("mobile.css") only screen and (max-width:480px);   
+

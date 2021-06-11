@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Customer Survey | Red Ball Pizza</title>
+    <link rel="stylesheet" href="styles/mq.css">
+</head>
+<body>
+<div id="wrapper">
+    <header id="header">
+    <img src="images/rb_logo.png" alt="Red Ball Pizza Banner and Logo"> 
+    
+    </header>
+    
+    <nav id="nav">
+        <ul id="nav_links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="direction.html">Directions</a></li>
+            <li><a href="coupons.html">Coupons</a></li>
+            <li><a href="order.html">Orders</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+
+        
+
+    <Section id="main_top_section">
+        <h1>
+            Customer Survey
+        </h1>
+        <p>
+            Thank you for taking our customer survey. Your response helps Red Ball Pizza maintain 
+            the tradition that has made us the top-rated pizzeria in the metro area. 
+            All participants are automatically entered into a monthly drawing to receive a 
+            <em>Red Ball Express PizzaFest</em> containing two large pizzas, a 2-liter soda, and a side order 
+            of chicken wings. Check your e-mail inbox for contest results.
+            <br/>
+            <br/>
+            Surveys are private and confidential. Red Ball Pizza will not share your contact information with third parties, <em>ever.</em>
+            <br/>
+            <br/>
+            Required values are marked by an asterisk (&#42;)
+        </p>     
+    </Section>
+
+    <form id="customer_survey"  action="mailto:adrian.pa31@outlook.com" method="POST">
+        <div id="fieldset_wrapper">
+        <fieldset id="fieldset_left" class="form">
+            <legend>Customer Information</legend>
+            
+            <table id="left_table">
+                <tr>
+                    <td ><label class="label_left" for="name">Name&#42;</label></td>
+                    <td ><input type="text" class="input_left" id="name" maxlength="25" required placeholder="first and last name" ></td>
+                </tr>
+                <tr>
+                    <td><label class="label_left" for="street_address">Street Address</label></td>
+                    <td><input type="text" class="input_left" id="street_address" maxlength="25"></td>
+                </tr>
+                <tr>
+                    <td><label class="label_left" for="city">City</label></td>
+                    <td><input type="text" class="input_left" id="city" maxlength="25"></td>
+                </tr>
+                <tr>
+                    <td><label class="label_left" for="state">State</label></td>
+                    <td><input type="text" class="input_left" id="state" maxlength="25"></td>
+                </tr>
+                <tr>
+                    <td><label class="label_left" for="postal_code">Postal Code</label></td>
+                    <td><input type="text" class="input_left" id="postal_code" maxlength="15" placeholder="nnn (-nnnn)"></td>
+                </tr>
+                <tr>
+                    <td><label class="label_left" for="phone">Phone number</label></td>
+                    <td><input type="tel" class="input_left" id="phone" maxlength="15" placeholder="(nnn) nnn-nnnn"></td>
+                </tr>
+                <tr>
+                    <td><label class="label_left" for="email">E&hyphen;mail&#42;</label></td>
+                    <td><input type="email" class="input_left" id="email" maxlength="40" required></td>
+                </tr>
+                <tr >
+                    <td class="vertical_align">
+                        <label id="label_hear_about" class="label_left" for="hear_about_us">Where did you hear about us&#63; &nbsp;
+                    <br/>
+                        &lpar;Select all that apply &rpar;
+                       
+                    </label>
+                    </td>
+
+                    <td>
+                    <select name="hear_about_us"  class="input_left" id="hear_about_us"  multiple="multiple" size="5">
+                        <option value="option1">Internet</option>
+                        <option value="option2">Magazine</option>
+                        <option value="option3">Newspaper</option>
+                        <option value="option4">Word of Mouth</option>
+                        <option value="option5">Other</option>
+                    </select>
+                    </td>   
+                </tr>
+
+                <tr>
+                    <td><label id="favorite_dish">What is your favorite dish&#63;</label>
+                    </td>
+                    <td>
+                        <input type="text" class="input_left" name="favorite_dish" maxlength="40">
+                    </td>
+                </tr>
+
+            </table>
+            <div id="grid_dine_out">
+                    
+                <div id="grid_box_left">
+                    <label id="dine_out_freq">How many times do you dine out per month&#63;</label>
+                </div>
+              
+                <div id="grid_box_right">
+                    <input id="dine_times" type="number"  name="dine_out_freq" min="0" max="31" value="1">
+                </div>
+               
+            
+            </div>
+             <div id="mailing_list">
+            <input type="checkbox">&nbsp;Add me to your mailing list for great coupons and specials	&#33;
+            </div>    
+        
+        </fieldset>
+        
+       
+        <fieldset id="fieldset_right" class="form">
+            <legend>Share your Experience at Red Ball Pizza</legend>
+            <table>
+                <tr>
+                    <td><label class="label_right" for="date_of_visit">Date of visit</label> </td>
+    
+                    <td> <input class="input_right" type="date" id="date_of_visit"></td>
+    
+                </tr>
+                <tr>
+                    <td> <label class="label_right" for="order_type">Order type</label></td>
+                    <td>
+                        <select class="input_right" id="order_type">
+
+                            <option value="dine_in">Dine In</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="teke_out">Take Out</option>
+                    </select>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label_right" for="service_friendly">Was your service friendly&quest;</label>
+                    </td>
+    
+                    <td>
+                        <div class="input_right r_radio">
+                            <label for="service_friendly">Yes</label>
+                            <input id="service_friendly" type="radio" name="group1" value="value1">
+                            <label for="service_friendly">No</label>
+                            <input type="radio" name="group1" value="value2">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="label_right" for="order_correct">Was your order correct&quest;</label>
+    
+                    </td>
+                    <td>
+                       <div class="input_right r_radio">
+                            <label for="order_correct">Yes</label>
+                            <input type="radio" id="order_correct" name="group2" value="value1">
+                            <label for="order_correct">No</label>
+                            <input type="radio" name="group2" value="value2">
+                       </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label class="label_right" for="food_hot">Was your food hot&quest;</label>
+    
+                    </td>
+                    <td>
+                       <div class="input_right r_radio">
+                            <label for="food_hot">Yes</label>
+                            <input type="radio" id="food_hot" name="group3" value="value1">
+                            <label for="food_hot">No</label>
+                            <input type="radio" name="group3" value="value2">
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label id="absolute" class="label_right" for="fader">Rate the overall service <br>&lpar;0=poor&semi; 10=great&rpar; </label>
+                    </td>
+    
+                    <td>
+                        <div class="input_right slidecontainer">
+                        <label class="slider_line" for="fader">0</label>
+                        <input type="range" name="rate_service" class="slider slider_line" id="fader" min="0" max="10" step="1" value="1">
+                        <output class="output-rate slider_line" for="output-rate">10</output>
+                        </div>
+
+                    </td>
+    
+                </tr>  
+                
+            
+            
+            <tr>
+            <td colspan="2" id="label_textarea">
+            <label  for="experience">Tell us more about your experience!</label>
+            </td>
+            </tr> 
+
+            <tr>
+            <td id="td_text_area" colspan="2">
+            <br/>
+            <textarea id="experience" cols="40" rows="6"></textarea>
+            </td>
+            </tr> 
+        </table>  
+        </fieldset>
+        </div>
+        <br/>
+        
+                <div id="buttons_container">
+                    <input type="submit" class="button" id="submit_my_survey" value="Submit My Survey" />
+                    <input type="reset" class="button" id="cancel" value="Cancel" />
+                </div>
+           
+          
+    </form>
+
+    </main>
+
+    <footer id="footer">
+
+        <section id="footer_section1" class="footer_section">
+            <h2>
+                Order
+            </h2>
+            <ul id="ul1" class="footer_links">
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#pasta">Pasta</a></li>
+                <li><a href="#wings">Wings</a></li>
+                <li><a href="#sides">Sides</a></li>
+                <li><a href="#salads">Salads</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+            </ul>
+        </section>
+
+        <section id="footer_section2" class="footer_section">
+            <h2>
+                About us
+            </h2>
+            <ul class="footer_links">
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#catering">Catering</a></li>
+                <li><a href="#school-lunches">School Lunches</a></li>
+            </ul>
+
+            <h2>
+                Customer service
+            </h2>
+            <ul class="footer_links">
+                <li><a href="#gluten-free-crusts">Gluten Free Crusts</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+        </section>
+
+        <section id="footer_section3" class="footer_section">
+            <h2>
+                My account
+            </h2>
+            <ul class="footer_links">
+                <li><a href="#create-an-account">Create an Account</a></li>
+                <li><a href="#sign-in">Sign In</a></li>
+                <li><a href="#order-status">Order Status</a></li>
+            </ul>
+
+            <h2>
+                Nutrition
+            </h2>
+            <ul class="footer_links">
+                <li><a href="#nutrition-information">Nutrition information</a></li>
+                <li><a href="#food-allergen">Food Allergen</a></li>
+                <li><a href="#gluten-free-pizza">Gluten Free Pizza</a></li>
+            </ul>
+        </section>
+
+        <section id="footer_section4" class="footer_section">
+            <h2>
+                Policies
+            </h2>
+            <ul class="footer_links">
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-use">Terms of Use</a></li>
+            </ul>
+
+            <br/>
+             
+            <address id="footer_address" >
+                Red Ball Pizza <br>
+                811 Beach Drive<br>
+                Ormond Beach, FL 32175<br>
+               &lpar;386&rpar; 555 &hyphen; 7499
+            </address>
+        </section>
+
+
+    </footer>
+</div>
+</body>
+</html>

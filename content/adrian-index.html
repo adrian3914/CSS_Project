@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant-customer-survey</title>
+</head>
+<body>
+    <main>
+
+        <section>
+             <h1>
+                 Adrian
+             </h1>   
+             <form id="customer_survey"  action="mailto:adrian.pa31@outlook.com" method="POST">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name&#42;</label></td>
+                            <td><input type="text" id="name" maxlength="25" required placeholder="first and last name" ></td>
+                        </tr>
+                        <tr>
+                            <td><label for="street_address">Street Address</label></td>
+                            <td><input type="text" id="street_address" maxlength="25"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="city">City</label></td>
+                            <td><input type="text" id="city" maxlength="25"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="state">State</label></td>
+                            <td><input type="text" id="state" maxlength="25"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="postal_code">Postal Code</label></td>
+                            <td><input type="text" id="postal_code" maxlength="15" placeholder="nnn (-nnnn)"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Phone number</label></td>
+                            <td><input type="tel" id="phone" maxlength="15" placeholder="(nnn) nnn-nnnn"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E&hyphen;mail&#42;</label></td>
+                            <td><input type="email" id="email" maxlength="40" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="hear_about_us">Where did you hear about us&#63; &nbsp;
+                            <br>
+                            &lpar;Select all that apply &rpar;
+                            </label>
+                            </td>
+
+                            <td>
+                            <select name="hear_about_us" id="hear_about_us"  multiple="multiple" size="5">
+                                <option value="option1">Internet</option>
+                                <option value="option2">Magazine</option>
+                                <option value="option3">Newspaper</option>
+                                <option value="option4">Word of Mouth</option>
+                                <option value="option5">Other</option>
+                            </select>
+                            </td>   
+                        </tr>
+
+
+                        <tr>
+                            <td><label id="favorite_dish">What is your favorite dish&#63;</label>
+                            </td>
+                            <td>
+                                <input type="text" name="favorite_dish" maxlength="40">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label id="dine_out_freq">How many times do you dine out per month&#63;</label>
+                                <input type="number" name="dine_out_freq" min="0" max="31" value="1">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox">&nbsp;Add me to your mailing list for great coupons and specials	&#33;
+                            </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+            </form>
+
+
+        </section>
+
+    </main>
+</body>
+</html>
